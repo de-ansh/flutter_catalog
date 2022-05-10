@@ -60,8 +60,7 @@ class _LoginPageState extends State<LoginPage> {
                       height: 40.0,
                     ),
                     InkWell(
-                      onTap: () async{
-                        
+                      onTap: () async {
                         setState(() {
                           changeButton = true;
                         });
@@ -73,12 +72,14 @@ class _LoginPageState extends State<LoginPage> {
                         height: 40,
                         width: changeButton ? 50 : 150,
                         alignment: Alignment.center,
-
-                        child: changeButton?Icon(Icons.done,color:Colors.white):Text(
-                          "Login",
-                          style: TextStyle(
-                              color: Colors.white, fontWeight: FontWeight.bold),
-                        ),
+                        child: changeButton
+                            ? Icon(Icons.done, color: Colors.white)
+                            : Text(
+                                "Login",
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold),
+                              ),
                         decoration: BoxDecoration(
                           color: Colors.deepPurple,
                           borderRadius:
