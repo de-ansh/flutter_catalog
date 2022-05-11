@@ -41,7 +41,7 @@ class _LoginPageState extends State<LoginPage> {
                   "assets/images/Hey.png",
                   fit: BoxFit.cover,
                 ),
-                const SizedBox(
+                SizedBox(
                   height: 20.0,
                 ),
                 Text(
@@ -51,7 +51,7 @@ class _LoginPageState extends State<LoginPage> {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                const SizedBox(
+                SizedBox(
                   height: 20.0,
                 ),
                 Padding(
